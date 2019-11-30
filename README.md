@@ -5,8 +5,8 @@ This advent calendar is led by NestJS Japan Users Group.
 
 ## Articles and Repositories
 
-- Day1: Architecture by @potato4d
-  - https://example.com
+- Day1: Architecture Handson by @potato4d
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/blob/master/day1)
 - Day2: TBD by @euxn23
   - https://example.com
 - Day3: Testing by @potato4d
