@@ -19,17 +19,20 @@ const items: Item[] = [
 ];
 
 @Injectable()
-export class AppService {
-
+export class ItemsService {
   getAllItems(): Item[] {
     return [...items];
   }
 
   getPublicItems(): PublicItem[] {
-    return this.getAllItems().map((item) => {
-      const publicItem = {...item};
+    return this.getAllItems().map(item => {
+      const publicItem = { ...item };
       delete publicItem.deletePassword;
       return publicItem;
     });
+  }
+
+  getItemById(id: number): PublicItem | undefined {
+    return this.getPublicItems().find(item => item.id === id);
   }
 }
