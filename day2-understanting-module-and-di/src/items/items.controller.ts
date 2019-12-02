@@ -7,7 +7,7 @@ interface GetItemWithCommentsResponseType {
   comments: Comment[];
 }
 
-@Controller()
+@Controller('items')
 export class ItemsController {
   constructor(
     private readonly itemsService: ItemsService,
@@ -22,10 +22,10 @@ export class ItemsController {
   @Get(':id/comments')
   getItemWithComments(@Param()
   param: {
-    id: number;
+    id: string;
   }): GetItemWithCommentsResponseType {
-    const item = this.itemsService.getItemById(param.id);
-    const comments = this.commentsService.getCommentsByItemId(param.id);
+    const item = this.itemsService.getItemById(+param.id);
+    const comments = this.commentsService.getCommentsByItemId(+param.id);
 
     return { item, comments };
   }

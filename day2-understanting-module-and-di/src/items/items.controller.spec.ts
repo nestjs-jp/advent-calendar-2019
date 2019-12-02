@@ -49,7 +49,7 @@ describe('ItemsController', () => {
         .mockImplementation(() => {
           return comments;
         });
-      expect(itemsController.getItemWithComments({ id: 1 })).toEqual({
+      expect(itemsController.getItemWithComments({ id: '1' })).toEqual({
         item,
         comments,
       });
