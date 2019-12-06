@@ -13,8 +13,8 @@ This advent calendar is led by NestJS Japan Users Group.
   - [Link](https://qiita.com/potato4d/items/d22a14ff6fb82d63c742)
 - Day4: Inject dummy Service to avoid external dependency by @euxn23
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day4-inject-dummy-service-to-avoid-external-dependency)
-- Day5: Authentication by @potato4d
-  - https://example.com
+- Day5: Exception Filter by @potato4d
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day5-introduce-exception-filter)
 - Day6: TBD by @euxn23
   - https://example.com
 - Day7: TypeORM by @potato4d
