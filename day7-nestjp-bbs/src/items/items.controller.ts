@@ -26,12 +26,14 @@ export class ItemsController {
       this.commentsService.getComments(),
     ]);
 
-    return await Promise.all(items.map(async (item) => {
-      return {
-        ...item,
-        comments: comments.filter((comment) => comment.itemId === item.id),
-      };
-    }));
+    return await Promise.all(
+      items.map(async item => {
+        return {
+          ...item,
+          comments: comments.filter(comment => comment.itemId === item.id),
+        };
+      }),
+    );
   }
 
   @Post()

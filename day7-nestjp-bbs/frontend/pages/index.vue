@@ -209,7 +209,7 @@ export default Vue.extend({
         body: '',
         deletePassword: '',
       },
-      items: items.reverse()
+      items: items.reverse(),
     };
   },
   methods: {
