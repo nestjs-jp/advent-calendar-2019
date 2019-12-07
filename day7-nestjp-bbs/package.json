@@ -1,0 +1,80 @@
+{
+  "name": "day7-nestjp-bbs",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all -p start:*",
+    "build": "npm-run-all -p build:*",
+    "dev": "npm-run-all -p dev:*",
+    "format": "prettier --write \"{src,frontend}/**/*.{ts,vue}\"",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "start:nest": "ts-node -r tsconfig-paths/register src/main.ts",
+    "dev:nest": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/src/main.js\"",
+    "debug:nest": "tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/src/main.js\"",
+    "build:nest": "rimraf dist && tsc -p tsconfig.build.json",
+    "prod:nest": "node dist/src/main.js",
+    "start:frontend": "nuxt-ts -c ./frontend/nuxt.config.ts start",
+    "dev:frontend": "nuxt-ts -c ./frontend/nuxt.config.ts",
+    "build:frontend": "nuxt-ts -c ./frontend/nuxt.config.ts build",
+    "start:database": "json-server ./database/index.js --port 3308",
+    "dev:database": "yarn start:database"
+  },
+  "dependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "@nestjs/platform-express": "^6.0.0",
+    "@nuxt/typescript-build": "^0.3.10",
+    "@nuxt/typescript-runtime": "^0.2.10",
+    "@nuxtjs/axios": "^5.8.0",
+    "@types/autolinker": "^2.0.0",
+    "autolinker": "^3.11.1",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.0",
+    "dayjs": "^1.8.17",
+    "json-server": "^0.15.1",
+    "npm-run-all": "^4.1.5",
+    "nuxt": "^2.10.2",
+    "reflect-metadata": "^0.1.12",
+    "rimraf": "^2.6.2",
+    "rxjs": "^6.3.3",
+    "ts-loader": "^6.2.1",
+    "xss": "^1.0.6"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^6.0.0",
+    "@types/express": "4.16.1",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.13.4",
+    "@types/supertest": "2.0.7",
+    "jest": "24.7.1",
+    "prettier": "1.17.0",
+    "supertest": "4.0.2",
+    "ts-jest": "24.0.2",
+    "ts-node": "8.1.0",
+    "tsc-watch": "2.2.1",
+    "tsconfig-paths": "3.8.0",
+    "tslint": "5.16.0",
+    "typescript": "3.6.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
