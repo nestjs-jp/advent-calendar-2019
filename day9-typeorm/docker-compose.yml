@@ -1,0 +1,15 @@
+version: '2'
+services:
+  db_data:
+    image: busybox
+    volumes:
+      - /var/lib/mysql
+  db:
+    image: mysql:5.7
+    volumes_from:
+      - db_data
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: nestday7
+      MYSQL_ROOT_PASSWORD: password
