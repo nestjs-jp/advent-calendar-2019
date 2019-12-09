@@ -21,14 +21,19 @@ export class UsersService {
   }
 
   async findUserByScreenName(screenName: string): Promise<boolean> {
-    return !!(await this.userRepository.findOne({ where: { screenName } }));
+    const user = await this.userRepository.findOne({ where: { screenName } });
+    return !!user;
   }
 
-  async register(userData: Partial<User>) {
+  async register(userData: Partial<User>): Promise<void> {
+    if (await this.findUserByScreenName(userData.screenName)) {
+      return Promise.reject(new Error('User is already taken.'));
+    }
     await this.userRepository.insert({
       ...userData,
       password: this.createPasswordDigest(userData.password),
     });
+    return;
   }
 
   async loginUser(screenName: string, password: string) {
