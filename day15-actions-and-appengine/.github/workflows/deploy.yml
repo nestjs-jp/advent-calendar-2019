@@ -1,0 +1,46 @@
+name: Deploy to AppEngine
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  PROJECT_ID: 'nest-advent-calendar-2019'
+  GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        id: cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: v1-dependencies-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            v1-dependencies-
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Build Application
+        run: |
+          yarn
+          yarn build
+      - name: Copy Service Account from Environment
+        run: |
+          echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+      - name: Use cloud-sdk
+        uses: docker://google/cloud-sdk:273.0.0
+      - name: Deploy
+        run: |
+          gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+          gcloud app deploy --quiet --project $PROJECT_ID
