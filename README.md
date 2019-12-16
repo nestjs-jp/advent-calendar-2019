@@ -8,19 +8,19 @@ This advent calendar is led by NestJS Japan Users Group.
 - Day1: Architecture Handson by @potato4d
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/blob/master/day01-starting-nestjs)
 - Day2: Module and DI by @euxn23
-  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day2-understanting-module-and-di)
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day02-understanting-module-and-di)
 - Day3: DTO and Validation by @potato4d
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day03-dto-and-validation)
 - Day4: Inject dummy Service to avoid external dependency by @euxn23
-  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day4-inject-dummy-service-to-avoid-external-dependency)
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day04-inject-dummy-service-to-avoid-external-dependency)
 - Day5: Exception Filter by @potato4d
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day05-introduce-exception-filter)
 - Day6: Prepare for Production Usage by @euxn23
-  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day6-prepare-for-production-usage)
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day06-prepare-for-production-usage)
 - Day7: Japanese Traditional BBS Example by @potato4d
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day07-nestjp-bbs)
 - Day8: Initialize Async Provider by @euxn23
-  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day8-initialize-async-provider)
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day08-initialize-async-provider)
 - Day9: TypeORM module by @potato4d
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day09-typeorm)
 - Day10: TBD by @euxn23
