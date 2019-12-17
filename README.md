@@ -37,8 +37,8 @@ This advent calendar is led by NestJS Japan Users Group.
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day15-actions-and-appengine)
 - Day16: Swagger module by @odan3240
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day16-swagger)
-- Day17: API versioning by @potato4d
-  - https://example.com
+- Day17: Sentry Integration by @potato4d
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day17-sentry)
 - Day18: TBD by @euxn23
   - https://example.com
 - Day19: Hosting by @potato4d
