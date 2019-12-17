@@ -1,0 +1,12 @@
+{
+  "name": "day14-decorator-and-inheritance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.19",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+ }
+}
