@@ -31,8 +31,8 @@ This advent calendar is led by NestJS Japan Users Group.
   - https://example.com
 - Day13: Global Prefix and Nest Router by @potato4d
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day13-api-versioning)
-- Day14: TBD by @euxn23
-  - https://example.com
+- Day14: Decorator and Inheritance by @euxn23
+  - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day14-decorator-and-inheritance)
 - Day15: Deploy to AppEngine using GitHub Actions by @potato4d
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day15-actions-and-appengine)
 - Day16: Swagger module by @odan3240
