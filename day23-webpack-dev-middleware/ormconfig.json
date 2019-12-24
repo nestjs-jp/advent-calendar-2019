@@ -1,0 +1,15 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3307,
+    "username": "docker",
+    "password": "docker",
+    "database": "nest-database",
+    "entities": ["src/entities/*.ts"],
+    "migrations": ["src/migrations/*.ts"],
+    "synchronize": false,
+    "cli": {
+        "migrationsDir": "src/migrations",
+        "entitiesDir": "src/entities"
+    }
+}
