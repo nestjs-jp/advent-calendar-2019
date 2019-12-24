@@ -49,8 +49,8 @@ This advent calendar is led by NestJS Japan Users Group.
   - https://example.com
 - Day22: TBD by @potato4d
   - https://example.com
-- Day23: TBD by @euxn23
-  - https://example.com
+- Day23: webpack-dev-middleware by @naporin0624
+  - [Link](https://naporitan.hatenablog.com/entry/2019/12/25/031421)
 - Day24: Japanese Document by @potato4d
   - https://example.com
 - Day25: Summary of 2019 by @euxn23
