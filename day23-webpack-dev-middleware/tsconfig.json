@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "esModuleInterop": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react",
+    "types": ["react", "node"],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src", "client", "apis"],
+  "exclude": ["node_modules", "dist", "test", "**/*.spec.ts"]
+}
