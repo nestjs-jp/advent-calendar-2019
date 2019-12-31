@@ -47,8 +47,8 @@ This advent calendar is led by NestJS Japan Users Group.
   - https://example.com
 - Day21: TyoeORM Webpack Build by @naporin0624
   - [Link](https://naporitan.hatenablog.com/entry/2019/12/21/%E3%80%90NestJS%E3%82%A2%E3%83%89%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC%E3%80%91NestJS_%26_TyoeORM%E3%82%92Weback%E3%81%A7%E3%81%A4%E3%81%8B%E3%81%86%EF%BC%81)
-- Day22: TBD by @potato4d
-  - https://example.com
+- Day22: Multiple Application Build by @potato4d
+  - [Link](https://qiita.com/potato4d/items/d15efbfebf6067f38a6a)
 - Day23: webpack-dev-middleware by @naporin0624
   - [Link](https://naporitan.hatenablog.com/entry/2019/12/25/031421)
 - Day24: Japanese Document by @potato4d
