@@ -41,10 +41,10 @@ This advent calendar is led by NestJS Japan Users Group.
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day17-sentry)
 - Day18: Avoid Decorator Hell by @euxn23
   - [Link](https://github.com/nestjs-jp/advent-calendar-2019/tree/master/day18-avoid-decorator-hell)
-- Day19: Hosting by @potato4d
-  - https://example.com
-- Day20: ModulesContainer / MetadataScanner by kyusyukeigo
-  - https://example.com
+- Day19: WebSocket by YutaSaito1991
+  - [Link](https://qiita.com/YutaSaito1991/items/26d25ae6ccf89fb25115)
+- Day20: Module Development by kyusyukeigo
+  - [Link](https://qiita.com/kyusyukeigo/items/97e64347731a2110e84f)
 - Day21: TyoeORM Webpack Build by @naporin0624
   - [Link](https://naporitan.hatenablog.com/entry/2019/12/21/%E3%80%90NestJS%E3%82%A2%E3%83%89%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC%E3%80%91NestJS_%26_TyoeORM%E3%82%92Weback%E3%81%A7%E3%81%A4%E3%81%8B%E3%81%86%EF%BC%81)
 - Day22: Multiple Application Build by @potato4d
