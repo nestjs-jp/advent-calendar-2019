@@ -36,7 +36,7 @@
     "@types/autolinker": "^2.0.0",
     "autolinker": "^3.11.1",
     "class-transformer": "^0.2.3",
-    "class-validator": "^0.11.0",
+    "class-validator": "^0.14.0",
     "dayjs": "^1.8.17",
     "json-server": "^0.15.1",
     "npm-run-all": "^4.1.5",
